@@ -1,6 +1,9 @@
+<!DOCTYPE html>
+ <html lang="en">
 <head>
- <script src="angular.min.js"></script>
- <script src="app.js"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+<script src="./app.js"></script>
+<script src="./server.js"></script>
  </head>
 <h1>
   {{title}}
@@ -9,22 +12,26 @@
 <div ng-controller="myCtrl">
 <form>
 	<label for="name">Name</label>
-	<input type="text" name="name" id="name" ng-model="name" placeholder="Enter Your Name">
+	<input type="text" name="name" id="name" ng-model="name" placeholder="Enter Your Name" required/>
 	<br>
 	<label for="location">Location</label>
-	<input type="text" name="location" id="location" ng-model="location" placeholder="Location">
+	<input type="text" name="location" id="location" ng-model="location" placeholder="Location" required/>
 	<br>
 	<label for="temp">Temperature</label>
-	<input type="text" name="temp" id="temp" ng-model="temp" placeholder="Temperature">
+	<input type="text" name="temp" id="temp" ng-model="temp" placeholder="Temperature" required/>
 	<br>
 	<label for="humidity">Humidity</label>
-	<input type="text" name="humidity" id="humidity" ng-model="humidity" placeholder="Humidity">
+	<input type="text" name="humidity" id="humidity" ng-model="humidity" placeholder="Humidity" required/>
 	<br>
 	<label for="wind">Wind Blowing Speed</label>
-	<input type="text" name="wind" id="wind" ng-model="wind" placeholder="Wind">
+	<input type="text" name="wind" id="wind" ng-model="wind" placeholder="Wind" required/>
 	<br>
 	<br>
 	<input type="submit" value="Submit" ng-click="submit()">
 </form>
 </div>
+
 </body>
+
+</html>
+
